@@ -8,11 +8,11 @@
 
 <h1>My Projects</h1>
 <div class="projects">
-    <article>
+    <!-- <article>
         <h2><a href="A2/index.html">A2: Speculation Exploration</a></h2>
         <img src="https://vis-society.github.io/labs/2/images/empty.svg" alt="">
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque commodi temporibus blanditiis fugit nemo? Exercitationem aliquam ut mollitia omnis dolores modi ea odit nihil id, voluptatem vitae pariatur, animi esse.</p>
-    </article>
+    </article> -->
     <article>
         <h2>Deserunt rem ad deleniti!</h2>
         <img src="https://vis-society.github.io/labs/2/images/empty.svg" alt="">
