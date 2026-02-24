@@ -40,7 +40,7 @@
     </article>
     <article>
         <h2>Perspiciatis facilis vel fuga?</h2>
-        <img src="https://vis`-society.github.io/labs/2/images/empty.svg" alt="">
+        <img src="https://vis-society.github.io/labs/2/images/empty.svg" alt="">
         <p>At vitae neque, sed tempore soluta esse inventore dolor aspernatur atque blanditiis temporibus mollitia modi cumque alias magni? Iste suscipit accusantium reprehenderit error laudantium quisquam tempora praesentium harum consectetur dolor.</p>
     </article>
     <article>
