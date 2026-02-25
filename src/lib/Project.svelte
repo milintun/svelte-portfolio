@@ -11,7 +11,7 @@
             {data.title}
         {/if}
     </h2>
-    <img src="{data.image}" alt="">
+    <img src="{base}{data.image}" alt="">
     <p>{data.description}</p>
 </article>
 

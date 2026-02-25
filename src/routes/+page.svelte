@@ -1,4 +1,5 @@
 <script>
+    import { base } from '$app/paths';
     import projects from "$lib/projects";
     import Project from "../lib/Project.svelte";
     import reading from "$lib/reading";
@@ -13,7 +14,7 @@
 </nav>
 <h1>Milin Tunsiricharoengul</h1>
 <p>Hi! I'm Milin. I like drumming for my band and going to concerts with my friends. Welcome to my website!</p>
-<img class="milin-pic" src="images/milin_pic.jpeg" alt="Milin and a friend working on a design project.">
+<img class="milin-pic" src="{base}/images/milin_pic.jpeg" alt="Milin and a friend working on a design project.">
 
 <h3>Latest Projects</h3>
 <div class="project-highlights">

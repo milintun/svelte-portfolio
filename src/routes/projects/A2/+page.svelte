@@ -70,7 +70,7 @@
 		<section class="report-subsection">
 			<h3>Checking Spatial Data</h3>
 			<figure>
-				<img src="/images/locations.png" alt="Scatter plot of property sale locations across Boston" />
+				<img src="{base}/images/locations.png" alt="Scatter plot of property sale locations across Boston" />
 			</figure>
 			<p>
 				I first began by exploring the spatial data, mapping out the latitude and longitudes. I saw a few
@@ -91,10 +91,10 @@
 			</p>
 			<div class="report-figures-grid">
 				<figure>
-					<img src="/images/usage-indiv%3F%3F.png" alt="Home usage distribution for non-entity sellers" />
+					<img src="{base}/images/usage-indiv%3F%3F.png" alt="Home usage distribution for non-entity sellers" />
 				</figure>
 				<figure>
-					<img src="/images/style-indiv%3F%3F.png" alt="Home style distribution for non-entity sellers" />
+					<img src="{base}/images/style-indiv%3F%3F.png" alt="Home style distribution for non-entity sellers" />
 				</figure>
 			</div>
 			<p>
@@ -103,7 +103,7 @@
 				were individuals, such as them selling single family homes disproportionately more than entities.
 			</p>
 			<figure>
-				<img src="/images/entity-vs-nonentity-total.png" alt="Total sales: entity vs non-entity sellers" />
+				<img src="{base}/images/entity-vs-nonentity-total.png" alt="Total sales: entity vs non-entity sellers" />
 			</figure>
 			<p>
 				Since non-entities have many more sales in general, I was not confident in labeling non-entities
@@ -122,14 +122,14 @@
 				having high holding value, etc., bought from similarly "big" sellers.
 			</p>
 			<figure>
-				<img src="/images/buyer-seller-type-heatmap.png" alt="Heatmap of sales frequency between buyer and seller types" />
+				<img src="{base}/images/buyer-seller-type-heatmap.png" alt="Heatmap of sales frequency between buyer and seller types" />
 			</figure>
 			<p>
 				The heatmap that visualized frequency of sales between all types of buyers and sellers
 				exhibited a clear diagonal, confirming that big buyers and big sellers are strongly correlated.
 			</p>
 			<figure>
-				<img src="/images/big-buyers-sellers-big-price.png" alt="Average sale price by buyer and seller type" />
+				<img src="{base}/images/big-buyers-sellers-big-price.png" alt="Average sale price by buyer and seller type" />
 			</figure>
 			<p>
 				I then wondered what it means for a sale to be "big," and if big buyers and sellers make big
@@ -144,7 +144,7 @@
 			<h3>Time Trends</h3>
 			<p>With over 20 years of data, I created basic exploratory visualizations of key variables over time.</p>
 			<figure>
-				<img src="/images/price-over-time.png" alt="Median sale price and flip profit over time" />
+				<img src="{base}/images/price-over-time.png" alt="Median sale price and flip profit over time" />
 			</figure>
 			<p>
 				First, I plotted average price and flipped profit over time to view large temporal trends in the
@@ -160,7 +160,7 @@
 			</p>
 			<figure>
 				<video controls>
-					<source src="/images/cash-animation.mov" type="video/mp4" />
+					<source src="{base}/images/cash-animation.mov" type="video/mp4" />
 					Your browser does not support the video tag.
 				</video>
 			</figure>
@@ -170,7 +170,7 @@
 			</p>
 			<figure>
 				<video controls>
-					<source src="/images/percent-investor-animation.mov" type="video/mp4" />
+					<source src="{base}/images/percent-investor-animation.mov" type="video/mp4" />
 					Your browser does not support the video tag.
 				</video>
 			</figure>
@@ -184,7 +184,7 @@
 		<section class="report-subsection">
 			<h3>Price Distribution</h3>
 			<figure>
-				<img src="/images/price-distribution.png" alt="Logarithmic price distribution by buyer type" />
+				<img src="{base}/images/price-distribution.png" alt="Logarithmic price distribution by buyer type" />
 			</figure>
 			<p>
 				Lastly, I looked at a logarithmic distribution of price across types of buyers for a high-level
@@ -209,7 +209,7 @@
 				category to capture small-scale actors regardless of legal structure.
 			</p>
 			<figure>
-				<img src="/images/flip-frequency-buyers.png" alt="Flip frequency by buyer type and flip term" />
+				<img src="{base}/images/flip-frequency-buyers.png" alt="Flip frequency by buyer type and flip term" />
 			</figure>
 			<p>
 				I first checked if small buyers were disproportionately associated with short-term flips, an
@@ -219,7 +219,7 @@
 				overall. However, it is clear that small investors play a very large role in the flipping scheme.
 			</p>
 			<figure>
-				<img src="/images/small-over-time.png" alt="Small investor share of buyer investors over time" />
+				<img src="{base}/images/small-over-time.png" alt="Small investor share of buyer investors over time" />
 			</figure>
 			<p>
 				Since my last visualization was an aggregation of all data over the 20 years, I checked the
@@ -229,7 +229,7 @@
 				composition, and their share has remained relatively stagnant over time.
 			</p>
 			<figure>
-				<img src="/images/year-built-flips.png" alt="Year built of flipped properties by investor type" />
+				<img src="{base}/images/year-built-flips.png" alt="Year built of flipped properties by investor type" />
 			</figure>
 			<p>
 				Lastly, I investigated if small investors were disproportionately targeting historic residences.
@@ -251,10 +251,10 @@
 			<h3>Q2: How do buyers choose property to invest in?</h3>
 			<div class="report-figures-grid">
 				<figure>
-					<img src="/images/buyer-zips-map.png" alt="Buyer type distribution across top zip codes (map)" />
+					<img src="{base}/images/buyer-zips-map.png" alt="Buyer type distribution across top zip codes (map)" />
 				</figure>
 				<figure>
-					<img src="/images/buyer-zips-heat-no-non.png" alt="Buyer type vs zip code heatmap (excluding non-investors)" />
+					<img src="{base}/images/buyer-zips-heat-no-non.png" alt="Buyer type vs zip code heatmap (excluding non-investors)" />
 				</figure>
 			</div>
 			<p>
@@ -266,7 +266,7 @@
 				focus on investors, and found no abnormal associations between ZIP code and buyer type.
 			</p>
 			<figure>
-				<img src="/images/riviera.png" alt="Yearly heatmap of buyer type by zip code revealing anomalous spikes" />
+				<img src="{base}/images/riviera.png" alt="Yearly heatmap of buyer type by zip code revealing anomalous spikes" />
 			</figure>
 			<p>
 				I wondered if the previous zip code visuals lacked nuance because they were aggregated over
@@ -279,10 +279,10 @@
 			</p>
 			<div class="report-figures-grid">
 				<figure>
-					<img src="/images/buyer-use-map.png" alt="Buyer type by residence usage (spatial map)" />
+					<img src="{base}/images/buyer-use-map.png" alt="Buyer type by residence usage (spatial map)" />
 				</figure>
 				<figure>
-					<img src="/images/buyer-use-heat.png" alt="Buyer type by atypical residence usage (heatmap)" />
+					<img src="{base}/images/buyer-use-heat.png" alt="Buyer type by atypical residence usage (heatmap)" />
 				</figure>
 			</div>
 			<p>
@@ -319,7 +319,7 @@
 				attribute instead, which had a clean domain of 0–24 months.
 			</p>
 			<figure>
-				<img src="/images/flipped-distribution-horizons.png" alt="Box and whisker of flip profit % by buyer type, colored by flip horizon" />
+				<img src="{base}/images/flipped-distribution-horizons.png" alt="Box and whisker of flip profit % by buyer type, colored by flip horizon" />
 			</figure>
 			<p>
 				A comprehensive box and whisker plot allowed me to quickly understand how percentage flip
@@ -329,7 +329,7 @@
 				me to my next visual.
 			</p>
 			<figure>
-				<img src="/images/flip-composition.png" alt="Flip time composition by buyer type" />
+				<img src="{base}/images/flip-composition.png" alt="Flip time composition by buyer type" />
 			</figure>
 			<p>
 				It seems like flip time is unrelated to buyer type and profit, since institutional investors actually
@@ -340,7 +340,7 @@
 				in the next visualization.
 			</p>
 			<figure>
-				<img src="/images/flip-profitability.png" alt="Scatter grid of flip profitability by investor type and flip term" />
+				<img src="{base}/images/flip-profitability.png" alt="Scatter grid of flip profitability by investor type and flip term" />
 			</figure>
 			<p>
 				My final visualization attempts to capture potential strategies of buyers according to their
