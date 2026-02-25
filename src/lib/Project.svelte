@@ -1,11 +1,12 @@
 <script>
+    import { base } from '$app/paths';
     export let data = {};
 </script>
 
 <article>
     <h2>
         {#if data.slug}
-            <a href="/projects/{data.slug}">{data.title}</a>
+            <a href="{base}/projects/{data.slug}">{data.title}</a>
         {:else}
             {data.title}
         {/if}

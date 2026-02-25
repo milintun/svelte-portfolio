@@ -1,12 +1,16 @@
+<script>
+	import { base } from '$app/paths';
+</script>
+
 <svelte:head>
 	<title>A2: Speculation Dataset Exploration</title>
 </svelte:head>
 
 <nav>
-	<a href="/">Home</a>
-	<a class="current" href="/projects">Projects</a>
-	<a href="/contact">Contact</a>
-	<a href="/resume">Resume</a>
+	<a href="{base}/">Home</a>
+	<a class="current" href="{base}/projects">Projects</a>
+	<a href="{base}/contact">Contact</a>
+	<a href="{base}/resume">Resume</a>
 	<a href="https://github.com/milintun" target="_blank">Github</a>
 </nav>
 
