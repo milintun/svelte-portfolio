@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Speculation Exploration",
+    "image": "/images/flipped-distribution-horizons.png",
+    "description": "Are my friends' parents with a hobby of flipping houses contributing to the housing crisis?",
+    "slug": "A2"
+  },
+  {
+    "title": "My Second Project",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "This project explores..."
+  },
+  {
+    "title": "My Third Project",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "In this project, I..."
+  },
+  {
+    "title": "My Fourth Project",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "In this project, I..."
+  }
+]
