@@ -6,6 +6,12 @@
     "slug": "A2"
   },
   {
+    "title": "Visualization Critique & Redesign",
+    "image": "/images/a3-final-design.png",
+    "description": "Critiquing a polar spiral Covid-19 case chart and redesigning it through four iterative sketches.",
+    "slug": "A3"
+  },
+  {
     "title": "My Second Project",
     "image": "https://vis-society.github.io/labs/2/images/empty.svg",
     "description": "This project explores..."
