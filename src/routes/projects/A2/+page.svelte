@@ -6,14 +6,6 @@
 	<title>A2: Speculation Dataset Exploration</title>
 </svelte:head>
 
-<nav>
-	<a href="{base}/">Home</a>
-	<a class="current" href="{base}/projects">Projects</a>
-	<a href="{base}/contact">Contact</a>
-	<a href="{base}/resume">Resume</a>
-	<a href="https://github.com/milintun" target="_blank">Github</a>
-</nav>
-
 <header class="report-header">
 	<p class="report-label">Assignment 2 · Vis &amp; Society</p>
 	<h1>A2: Speculation Dataset Exploration</h1>

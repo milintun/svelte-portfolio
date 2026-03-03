@@ -6,14 +6,6 @@
 	<title>A3: Visualization Critique &amp; Redesign</title>
 </svelte:head>
 
-<nav>
-	<a href="{base}/">Home</a>
-	<a class="current" href="{base}/projects">Projects</a>
-	<a href="{base}/contact">Contact</a>
-	<a href="{base}/resume">Resume</a>
-	<a href="https://github.com/milintun" target="_blank">Github</a>
-</nav>
-
 <header class="report-header">
 	<p class="report-label">Assignment 3 · Vis &amp; Society</p>
 	<h1>A3: Visualization Critique &amp; Redesign</h1>

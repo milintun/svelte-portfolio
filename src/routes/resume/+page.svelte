@@ -1,11 +1,3 @@
-<nav>
-  <a href="./">Home</a>
-  <a href="projects">Projects</a>
-  <a href="contact">Contact</a>
-  <a class="current" href="resume">Resume</a>
-  <a href="https://github.com/milintun" target="_blank">Github</a>
-</nav>
-
 <h1>My Resume</h1>
 <section class="resume-section">
     <h2>Education</h2>
