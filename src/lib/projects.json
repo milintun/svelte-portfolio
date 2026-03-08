@@ -12,9 +12,10 @@
     "slug": "A3"
   },
   {
-    "title": "My Second Project",
-    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-    "description": "This project explores..."
+    "title": "Persuasive or Deceptive Visualization",
+    "image": "/images/a4-for.png",
+    "description": "Can the same dataset argue both for and against a proposition? Exploring ethical lines in data visualization through two opposing charts on gender equality and economic strength.",
+    "slug": "A4"
   },
   {
     "title": "My Third Project",
