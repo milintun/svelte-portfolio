@@ -1,30 +1,68 @@
 [
   {
+    "title": "Wuthering Heights Reading Time Estimator",
+    "image": "/images/Wuthering-heights1.webp",
+    "description": "A tool that estimates how long it will take YOU specifically to finish Wuthering Heights, based on your reading speed and emotional resilience.",
+    "year": 2021,
+    "story": "Freshman year. My roommate bet me I couldn't finish Wuthering Heights in a week. I finished it in five days, but only because I refused to lose. On the last night I wondered: could you actually predict how long a book takes someone based on how emotionally brutal it gets? I built a calculator. It was the first time I realized you could quantify something that felt completely unquantifiable. I didn't sleep much that week."
+  },
+  {
+    "title": "Playlist Mood Machine",
+    "image": "/images/playist-mood-machine-40234.png",
+    "description": "An interactive tool that builds Spotify playlists based on your current emotional state, weather, and what you ate for lunch.",
+    "year": 2022,
+    "story": "That same roommate introduced me to a band I became obsessed with. I started noticing my music choices shifted with the weather, with how tired I was, with what I'd eaten. So I built a tool. I fed it silly variables — barometric pressure, lunch protein, temperature — and it made playlists that were disturbingly accurate. It felt like I'd accidentally built a mirror. I kept it to myself."
+  },
+  {
+    "title": "The Commute Chronicles",
+    "image": "/images/a-girl-crying-because-her-subway-got-del-40244.png",
+    "description": "Three months of MBTA delay data, personal frustration logs, and an attempt to find patterns in chaos.",
+    "year": 2022,
+    "story": "The Red Line was 11 minutes late on a Tuesday and I decided to log every delay for the rest of the semester. I did not expect this to become a 400-row dataset. My therapist said it was a healthy coping mechanism. My data structures professor gave me extra credit. Both were correct."
+  },
+  {
+    "title": "Drumming Practice Tracker",
+    "image": "/images/a-girl-with-a-crazy-drum-set-with-a-hund-40253.png",
+    "description": "A personal dashboard visualizing my drumming practice sessions, tempo progression, and the songs I finally nailed.",
+    "year": 2023,
+    "story": "A friend convinced me to join her band as the drummer. I didn't know how to drum. I learned. There was a fill from a 1978 prog rock song I could not crack no matter what, so I built a tracker to at least prove I was improving. The data said yes. My bandmates said maybe. Either way, I had found something that made me want to show up every week."
+  },
+  {
+    "title": "Concert Setlist Predictor",
+    "image": "/images/a-girl-crowdsurfing-at-a-concert-40260.png",
+    "description": "Using historical setlist data to predict what songs bands will play live, with a suspiciously good accuracy rate.",
+    "year": 2023,
+    "story": "The band started playing shows. We'd go to other shows too — all of us crammed on the Red Line heading downtown. Before every concert someone would ask what songs were coming and I'd just know somehow. Eventually I made that intuition into a model: setlist.fm data, a little math, 73% accuracy. It felt like I was getting good at this — at finding signal in things people assumed were random."
+  },
+  {
+    "title": "Neighborhood Sound Map",
+    "image": "/images/a-girl-walking-around-a-neighborhood-wit-40262.png",
+    "description": "A hand-collected audio survey of Boston neighborhoods, mapped by decibel level and vibe.",
+    "year": 2024,
+    "story": "That summer I walked every neighborhood in the city with a decibel meter, rating ambient sounds on a scale I invented called 'Vibe Units.' It started as a project. It became a habit. I was trying to understand the city — where things were loud and why, what the sound of a place said about who lived there. I was also killing time. A lot was happening that year that I didn't yet have a chart for."
+  },
+  {
     "title": "Speculation Exploration",
     "image": "/images/flipped-distribution-horizons.png",
     "description": "Are my friends' parents with a hobby of flipping houses contributing to the housing crisis?",
-    "slug": "A2"
+    "slug": "A2",
+    "year": 2025,
+    "story": "It started with an offhand comment at a dinner party. Someone's dad had just flipped his fourth house. I nodded politely, then went home and pulled every Boston property transaction record I could find. I didn't know it then, but this was the moment I realized data could answer questions I didn't even know I had. I haven't been able to stop since."
   },
   {
     "title": "Visualization Critique & Redesign",
     "image": "/images/a3-final-design.png",
     "description": "Critiquing a polar spiral Covid-19 case chart and redesigning it through four iterative sketches.",
-    "slug": "A3"
+    "slug": "A3",
+    "year": 2025,
+    "story": "The house-flipping rabbit hole got me thinking about how charts tell stories — or bury them. Then my professor showed us a polar spiral Covid chart that looked impressive but was hiding something. I could feel it lying to me. So I drew it again, four times, with increasing levels of spite and better axis labels. Something shifted. I started seeing deception everywhere."
   },
   {
     "title": "Persuasive or Deceptive Visualization",
     "image": "/images/a4-for.png",
     "description": "Can the same dataset argue both for and against a proposition? Exploring ethical lines in data visualization through two opposing charts on gender equality and economic strength.",
-    "slug": "A4"
-  },
-  {
-    "title": "My Third Project",
-    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-    "description": "In this project, I..."
-  },
-  {
-    "title": "My Fourth Project",
-    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-    "description": "In this project, I..."
+    "slug": "A4",
+    "year": 2025,
+    "story": "Once you see how charts can lie, you can't unsee it. My professor confirmed my suspicions: the same data can argue anything. I made two charts from one dataset that said opposite things, and both were technically correct. I showed them to the friend whose dad flipped houses. She stopped speaking to me for three days. I deserved it."
   }
 ]
