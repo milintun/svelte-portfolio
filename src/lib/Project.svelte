@@ -12,6 +12,7 @@
         {/if}
     </h2>
     <img src="{base}{data.image}" alt="">
+    <p class="year">{data.year}</p>
     <p>{data.description}</p>
 </article>
 
@@ -34,5 +35,10 @@
   a:hover {
     background-color: oklch(from var(--color-accent) 95% 5% h);
     padding: 0.2rem;
+  }
+
+  .year {
+    font-weight: bold;
+    margin-bottom: 0;
   }
 </style>
