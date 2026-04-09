@@ -3,6 +3,7 @@
     import { onMount } from 'svelte';
     import * as d3 from 'd3';
     import BarHorizontal from '../../lib/BarHorizontal.svelte';
+    import LineChart from '../../lib/LineChart.svelte';
     import { computePosition, autoPlacement, offset } from '@floating-ui/dom';
 
     let locData = [];
@@ -17,6 +18,56 @@
     let tooltipPosition = { x: 0, y: 0 };
 
     let clickedCommits = [];
+
+    // lab 8
+    let svg;
+    $: {
+        d3.select(svg).call(d3.brush()
+            .extent([[usableArea.left, usableArea.top], [usableArea.right, usableArea.bottom]])
+            .on("start brush end", brushed));
+        d3.select(svg).selectAll(".dots, .overlay ~ *").raise();
+    }
+
+    $: brushSelection = null;
+
+    function brushed (evt) {
+        brushSelection = evt.selection;
+    }
+
+    function isCommitBrushed (commit) {
+        if (!brushSelection) {
+            return false;
+        }
+
+        const inX = brushSelection[0][0] <= xScale(commit.datetime)  && xScale(commit.datetime) <= brushSelection[1][0];
+        const inY = brushSelection[0][1] <= yScale(commit.hourFrac)  && yScale(commit.hourFrac) <= brushSelection[1][1];
+
+        return inX && inY;
+    }
+
+    $: brushedCommits = brushSelection ? commits.filter(isCommitBrushed) : [];
+    $: selectedCommits = Array.from(new Set([...clickedCommits, ...brushedCommits]));
+
+    // line chart
+    let linesByDate = [];
+    $: {
+        // 1. Get the count for each date in the data
+        const rolled = d3.rollups(
+            locData,
+            v => v.length,
+            d => d3.timeDay.floor(d.datetime)
+        ).map(([date, count]) => ({ date, count }));
+
+        // 2. Get an array of all days covered by the data
+        const [minDate, maxDate] = d3.extent(rolled, d => d.date);
+        const allDays = d3.timeDays(minDate, d3.timeDay.offset(maxDate, 1));
+
+        // 3. Build linesByDate by filling all undefined dates with 0 counts
+        linesByDate = allDays.map(date => ({
+            date,
+            count: rolled.find(d => d.date.getTime() === date.getTime())?.count ?? 0
+        }));
+    }
 
     async function dotInteraction(index, evt) {
         let hoveredDot = evt.currentTarget;
@@ -100,17 +151,18 @@
         commits = d3.sort(commits, d => -d.totalLines);
     });
 
-    $: selectedLines = clickedCommits.length > 0
-        ? clickedCommits.flatMap(d => d.lines)
-        : locData;
+	$: selectedLines = (selectedCommits.length > 0 ? selectedCommits : commits).flatMap(d => d.lines);
+
     $: selectedCounts = d3.rollup(selectedLines, v => v.length, d => d.type);
     $: allTypes = Array.from(new Set(locData.map(d => d.type)));
     $: barData = allTypes.map(type => ({ label: String(type), value: selectedCounts.get(type) || 0 }));
+
+
 </script>
 
 <h1>Meta</h1>
 
-<svg viewBox="0 0 {width} {height}">
+<svg bind:this={svg} viewBox="0 0 {width} {height}">
     <text x={margin.left} y="0" font-size="20" font-weight="bold">Commits by Time of Day</text>
     <g class="gridlines" transform="translate({usableArea.left}, 0)" bind:this={yAxisGridlines} />
     <g transform="translate(0, {usableArea.bottom})" bind:this={xAxis} />
@@ -158,9 +210,11 @@
     <dd>{hoveredCommit.totalLines}</dd>
 </dl>
 
+<LineChart data={linesByDate} />
+
 <BarHorizontal
     data={barData}
-    title={clickedCommits.length > 0 ? "Selected Commits Breakdown" : "Website Breakdown"}
+    title={`Lines of Code: ${selectedCommits.length} Selected Commits`}
 />
 
 <style>
