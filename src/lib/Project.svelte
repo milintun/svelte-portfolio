@@ -7,6 +7,8 @@
     <h2>
         {#if data.slug}
             <a href="{base}/projects/{data.slug}">{data.title}</a>
+        {:else if data.url}
+            <a href="{data.url}" target="_blank">{data.title}</a>
         {:else}
             {data.title}
         {/if}

@@ -64,5 +64,13 @@
     "slug": "A4",
     "year": 2025,
     "story": "Once you see how charts can lie, you can't unsee it. My professor confirmed my suspicions: the same data can argue anything. I made two charts from one dataset that said opposite things, and both were technically correct. I showed them to the friend whose dad flipped houses. She stopped speaking to me for three days. I deserved it."
+  },
+  {
+    "title": "Lab 9: Geospatial Visualizations",
+    "image": "/images/lab9.png",
+    "description": "Learning how to use maps in viz",
+    "year": 2026,
+    "story": "If you tried toooooooo. Cause if you want you can stay with me in my bed, if you want to, only if you want to.",
+    "url": "https://milintun.github.io/like-a-bike/"
   }
 ]
