@@ -178,7 +178,7 @@
             role="button"
             tabindex="0"
             aria-label="Commit {commit.id?.slice(0,7)} on {commit.date}"
-            class:selected={clickedCommits.includes(commit)}
+            class:selected={selectedCommits.includes(commit)}
             on:mouseenter={evt => dotInteraction(index, evt)}
             on:mouseleave={evt => dotInteraction(index, evt)}
             on:click={evt => dotInteraction(index, evt)}
